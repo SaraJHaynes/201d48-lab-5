@@ -29,10 +29,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) {//eslint-disable-line
-var output = a * b;
-var message = 'The product of ' + a + ' and ' + b  + ' is ' + output + '.';
-return [output, message];
-}
+  var output = a * b;
+  var message = 'The product of ' + a + ' and ' + b + ' is ' + output + '.';
+  return [output, message];
+  }
+  
+  testMultiply(5, 9);
+// function multiply(a, b) { //eslint-disable-line
+
+// }
 
 testMultiply(5, 9);
 
