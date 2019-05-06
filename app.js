@@ -121,17 +121,19 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 //////////////////////////////////////////////////////////////////////////////////////////
-// function multiplyArray(multArr) { //eslint-disable-line
+function multiplyArray(multArr) { //eslint-disable-line
+  var a = multArr[0];
+  var b = multArr[1];
+  var c = multArr[2]; 
+  var firstArrayOutput = multiply(a, b);
+  var firstArrayMultiplied = multiply(c, firstArrayOutput[0]);
+  var message = 'The numbers ' + a + ',' + b + ',' + c + ' have a product of ' + firstArrayMultiplied[0] + '.';
+  return [firstArrayMultiplied[0], message];
 
-// firstArrayOutput = sumArray[2,3,4];
-// firstArrayMultiplied = mulitiply(sumArray[0]);
-// var message = 'The numbers 2,3,4 have a product of ' + firstArrayMultiplied + '.';
-// return [firstArrayMultiplied[0], message];
+}
 
-// }
-
-// // Here is the test for multiplyArray(); uncomment it to run it
-//  testMultiplyArray(testArray);
+// Here is the test for multiplyArray(); uncomment it to run it
+ testMultiplyArray(testArray);
 //////////////////////////////////////////////////////////////////////////////////////////////
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
